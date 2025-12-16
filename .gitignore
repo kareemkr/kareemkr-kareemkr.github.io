@@ -1,0 +1,5 @@
+# Node / build artifacts (if you add tooling later)
+node_modules/
+dist/
+.DS_Store
+.env

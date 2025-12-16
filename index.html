@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kareem Radwan — About</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Kareem Radwan — About me, projects, and contact" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="avatar" aria-hidden="true">
+        <!-- Replace with your avatar image: <img src="assets/avatar.jpg" alt="Kareem Radwan"> -->
+        <svg width="96" height="96" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="avatar-svg">
+          <rect width="24" height="24" rx="4" fill="#0ea5a4"/>
+          <text x="50%" y="55%" text-anchor="middle" fill="white" font-size="10" font-family="sans-serif" dy=".35em">KR</text>
+        </svg>
+      </div>
+      <div class="title">
+        <h1>Kareem Radwan</h1>
+        <p class="subtitle">Software engineer • AI enthusiast • Python developer</p>
+        <nav class="socials">
+          <a href="https://github.com/kareemkr" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:kareemradan09@gmail.com">Email</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about card">
+      <h2>About me</h2>
+      <p>
+        Hi — I'm Kareem. I build web applications, work with AI, and write Python to solve problems.
+        I enjoy learning new stacks and contributing to open source. Currently focused on JavaScript, TypeScript, Python, and machine learning / AI tooling.
+      </p>
+      <p>Replace this paragraph with your short bio, highlights, or elevator pitch.</p>
+    </section>
+
+    <section class="projects card">
+      <h2>Selected projects</h2>
+      <ul>
+        <li><strong>Project A</strong> — Short description. <a href="#">View</a></li>
+        <li><strong>Project B</strong> — Short description. <a href="#">View</a></li>
+        <li><strong>Project C</strong> — Short description. <a href="#">View</a></li>
+      </ul>
+    </section>
+
+    <section class="skills card">
+      <h2>Skills</h2>
+      <p>JavaScript • TypeScript • Python • AI/ML • Node.js • React • Docker • Kubernetes • CI/CD • Testing</p>
+    </section>
+
+    <section class="contact card">
+      <h2>Contact</h2>
+      <p>Interested in working together or have a question? Email me at <a href="mailto:kareemradan09@gmail.com">kareemradan09@gmail.com</a>.</p>
+      <p>
+        Download my resume: <a href="resume.pdf" target="_blank">resume.pdf</a> (replace with your resume)
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kareem Radwan — Built with ❤️ • <a href="https://github.com/kareemkr">GitHub</a></p>
+    </div>
+  </footer>
+
+<script>
+  // small script: updates year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

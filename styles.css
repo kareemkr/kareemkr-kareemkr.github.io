@@ -1,0 +1,75 @@
+:root{
+  --bg: #0f172a;
+  --card: #0b1220;
+  --muted: #94a3b8;
+  --accent: #06b6d4;
+  --text: #e6eef7;
+  --radius: 12px;
+  --container: 960px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#071027 0%, #071733 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+  padding-bottom:40px;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:24px;
+}
+
+.site-header{
+  padding:28px 0;
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.header-inner{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+.avatar{flex:0 0 96px}
+.avatar-svg{border-radius:12px}
+
+.title h1{margin:0;font-size:1.6rem}
+.subtitle{margin:6px 0;color:var(--muted)}
+.socials a{color:var(--accent); margin-right:10px; text-decoration:none}
+
+main{margin-top:22px; display:grid; grid-template-columns:1fr; gap:18px}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow: 0 8px 20px rgba(2,6,23,0.6);
+  border:1px solid rgba(255,255,255,0.03);
+}
+.card h2{margin-top:0;color:var(--accent)}
+
+.projects ul{padding-left:1rem}
+.projects li{margin-bottom:8px}
+
+.site-footer{
+  margin-top:28px;
+  padding:18px 0;
+  color:var(--muted);
+  font-size:0.9rem;
+  border-top:1px solid rgba(255,255,255,0.02);
+  text-align:center;
+}
+
+/* Responsive */
+@media(min-width:800px){
+  main{grid-template-columns: 2fr 1fr}
+  .about{grid-column:1/2}
+  .projects{grid-column:1/2}
+  .skills{grid-column:2/3}
+  .contact{grid-column:2/3}
+}
